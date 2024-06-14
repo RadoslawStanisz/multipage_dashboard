@@ -101,67 +101,6 @@ cytoscape_graph = html.Div([
     html.Div(id='hoverEdge', style={'font-size': '20px', 'font-family': 'Arial, sans-serif'}),
     generate_cytoscape_graph(station_labels)
 ])
-#     cyto.Cytoscape(
-#         id='cytoscape-simple-graph',
-#         style={'width': '100%', 'height': '70vh'},  
-#         layout={'name': 'preset'},
-#         stylesheet=[
-#             {
-#                 'selector': 'node',
-#                 'style': {
-#                     'width': 'data(width)',
-#                     'height': 'data(height)',
-#                     'background-color': '#800080',
-#                     'color': '#000',
-#                     'font-family': 'Arial, sans-serif',
-#                     'font-size': '10px',
-#                     'text-opacity': 0,
-#                     'shape': 'ellipse'
-#                 }
-#             },
-#             {
-#                 'selector': '.station',
-#                 'style': {
-#                     'font-size': '18px',
-#                     'font-family': 'Arial, sans-serif',
-#                     'text-opacity': 1,
-#                 }
-#             },
-#             *[
-#                 {
-#                     'selector': f'.{station.lower().replace(" ", "_")}',
-#                     'style': {
-#                         'label': details['label'],
-#                         'text-halign': details.get('text-halign', 'center'),
-#                         'text-valign': details.get('text-valign', 'top'),
-#                         'font-family': 'Arial, sans-serif'
-#                     }
-#                 } for station, details in station_labels.items()
-#             ],
-#             {
-#                 'selector': '.top-route',
-#                 'style': {
-#                     'line-color': '#FF4136',
-#                     'width': 'data(width)',
-#                     'target-arrow-color': '#FF4136',
-#                     'target-arrow-shape': 'triangle',
-#                     'arrow-scale': 1.2,
-#                     'curve-style': 'bezier'
-#                 }
-#             },
-#             {
-#                 'selector': 'edge',
-#                 'style': {
-#                     'line-color': '#888',
-#                     'width': 'data(width)',
-#                     'curve-style': 'bezier'
-#                 }
-#             }
-#         ],
-#         userZoomingEnabled=True,  
-#         userPanningEnabled=True 
-#     )
-# ])
 
 @app.callback(
     Output('cytoscape-simple-graph', 'elements'),
@@ -227,7 +166,7 @@ table = html.Div([
         ],
         value='monthly',
         clearable=False,
-        style={'width': '30%'}
+        style={'width': '50%'}
     ),
     html.Br(),
     html.Div(id='datatable-container')
@@ -254,9 +193,9 @@ revenue_variability = html.Div([
         ],
         value='Monthly',
         clearable=False,
-        style={'width': '30%'}
+        style={'width': '50%'}
     ),
-    dcc.Graph(id='revenue-graph', style={'width': '100%', 'height': '33vh'}),
+    dcc.Graph(id='revenue-graph', style={'width': '100%', 'height':'50vh'}),
     html.Br(),
     html.Br()
 ])
@@ -306,9 +245,9 @@ cumulative_revenue_daily = html.Div([
         ],
         value='Ticket Type',
         clearable=False,
-        style={'width': '30%'}
+        style={'width': '50%'}
     ),
-    dcc.Graph(id='revenue-graph2', style={'width': '100%', 'height': '33vh'})
+    dcc.Graph(id='revenue-graph2', style={'width': '100%','height':'50vh'})
 ])
 
 @app.callback(

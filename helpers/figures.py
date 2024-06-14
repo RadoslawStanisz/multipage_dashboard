@@ -21,7 +21,7 @@ df_pivot_weekly_reset = processed_data['df_pivot_weekly_reset']
 def generate_cytoscape_graph(station_labels):
     return cyto.Cytoscape(
         id='cytoscape-simple-graph',
-        style={'width': '100%', 'height': '70vh'},  
+        style={'width': '100%', 'height': '100vh'},
         layout={'name': 'preset'},
         stylesheet=[
             {
