@@ -25,7 +25,7 @@ app.layout = dbc.Container([
     ),
     html.Br(),
     html.Div(id='page-content', style={'margin-top': '20px'})
-], fluid=True, style={'min-width': '2000px', 'margin': 'auto'})
+], fluid=True, style={'min-width': '1600px', 'margin': 'auto'})
 
 @app.callback(Output('page-content', 'children'),
               [Input('url', 'pathname')])
