@@ -46,8 +46,8 @@ second_page_layout = html.Div(
                         ]),
                         dbc.Row(
                             [
-                                dbc.Col(html.H2("Departure delays by reason", style=style), width=8),
-                                dbc.Col(html.H2("Delays percentage by day type", style=style), width=3)
+                                dbc.Col(html.H2("Departure delays by reason", style=style), width=7),
+                                dbc.Col(html.H2("Delays percentage by day type", style=style), width=4)
                             ]
                         ),
                         dbc.Row(

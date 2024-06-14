@@ -6,7 +6,7 @@ from layout.first_page import first_page_layout
 from layout.second_page import second_page_layout
 from layout.third_page import third_page_layout
 
-server = app.server
+#server = app.server
 app.layout = dbc.Container([
     dcc.Location(id='url', refresh=False),
 
@@ -25,7 +25,7 @@ app.layout = dbc.Container([
     ),
     html.Br(),
     html.Div(id='page-content', style={'margin-top': '20px'})
-], fluid=True)
+], fluid=True, style={'min-width': '2000px', 'margin': 'auto'})
 
 @app.callback(Output('page-content', 'children'),
               [Input('url', 'pathname')])
