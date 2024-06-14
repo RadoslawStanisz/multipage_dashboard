@@ -1,0 +1,3 @@
+The last page of this dashboard focuses on travellers' behavior as consumers. From the charts below we can see
+when and how do they purchase the tickets, what type and class of tickets are most popular and how do they pay. The data for `Days between purchase and travel` 
+chart is presented in a log scale.

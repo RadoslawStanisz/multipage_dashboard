@@ -1,0 +1,5 @@
+This page focuses on delays analysis. The first chart shows peak travel times. Peak travel times are determined by 
+number of scheduled departures per given hour. Therefore cancelled departures are also included. This chart also shows how many departures were on time, delayed and cancelled.
+Note that departure times are binned into 24 full hours meaning that if the departure took place at 19:45, it belongs to '19' in the chart. 
+The chart is interactive, you can isolate particular trace/traces by clicking/unclicking it in the legend pane. 
+Finally, if you hover over any of the charts, the tooltip displays more details.

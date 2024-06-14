@@ -1,0 +1,11 @@
+This is an exploratory interactive dashboard designed to get some insights regarding National Rail in the UK according to specified requirements.
+The dashboard is split into 3 pages, the navigation buttons are located at the very top of each page.
+The data used in this dashboard ranges from the beginning of January 2024 till end of April 2024 and contains information on ticket purchase transactions along with many transaction details.
+**This page focuses on the most popular routes and revenue analysis. It is important to keep in mind that all charts and tables related to revenue (including the figures in KPI section)
+use the data that was filtered in a way that they do NOT include transactions made before 01.01.2024 (There are a few transactions in the dataset with date of purchase before 2024)**. All other charts and figures (not related to revenue) use the full dataset.
+In addition, the chart titled `Revenue variability` **on a weekly timeframe has data till 28.04.2024. This is because on this day the full
+week ends.** I also would like to mention the difference between Total Revenue and Net Revenue. Net Revenue is just a Total Revenue minus the amount corresponding to requested refunds (e.g., due to delays, cancellations, etc.).
+When it comes to most popular routes, the ranking was made based on the number of tickets sold for particular route during the analysed period.
+Finally, changes expressed in % included in the KPI section below (yellow background) also may need some clarification.
+They refer to previous month's figures (cumulative values). For example, in case of `Total Revenue`, it is the ratio of cumulative total revenue as of
+2024-04-30 / cumulative total revenue as of 2024-03-31.

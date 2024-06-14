@@ -1,0 +1,5 @@
+The table to the right is also interactive. You can choose between monthly and weekly timeframes, filter the table 
+(just type in e.g., "January" or "First Class" in the second row of the adequate column - case sensitive).
+Finally, you can export the data to .xlsx (excel). The last column calculates the % change concerning subtotal column. 
+It compares the chosen subtotal value with the value from the previous month/week.
+Positive values are highlighted with green background, negative with red.
