@@ -75,7 +75,7 @@ def create_kpi_section():
         ))
     fig.update_layout(
         font={'family': 'Arial, sans-serif'},
-        height=300,
+        height=250,
         plot_bgcolor='#FFD700',  
         paper_bgcolor='#FFD700'  
     )
@@ -217,7 +217,7 @@ def display_hover_edge_data(data):
             return "Route: %s" % label
         
 table = html.Div([
-    html.H2("Revenue by ticket type and class", style={'textAlign': 'center', 'color': '#800080', 'font-family': 'Arial, sans-serif'}),
+    html.H3("Revenue by ticket type and class", style={'textAlign': 'center', 'color': '#800080', 'font-family': 'Arial, sans-serif'}),
     html.H5("Choose time interval", style={'color': '#800080', 'font-family': 'Arial, sans-serif'}),
     dcc.Dropdown(
         id='aggregation-dropdown',
@@ -243,7 +243,7 @@ def update_datatable(aggregation):
 
 
 revenue_variability = html.Div([
-    html.H2("Revenue variability", style={'textAlign': 'center', 'color': '#800080', 'font-family': 'Arial, sans-serif'}),
+    html.H3("Revenue variability", style={'textAlign': 'center', 'color': '#800080', 'font-family': 'Arial, sans-serif'}),
     html.H5("Choose time interval", style={'color': '#800080', 'font-family': 'Arial, sans-serif'}), 
     dcc.Dropdown(
         id='interval-dropdown',
@@ -296,7 +296,7 @@ def update_graph(selected_interval):
     return {'data': [trace1, trace2], 'layout': layout}
 
 cumulative_revenue_daily = html.Div([
-    html.H2("Cumulative revenue by ticket type and class (Daily)", style={'textAlign': 'center', 'color': '#800080', 'font-family': 'Arial, sans-serif'}),
+    html.H3("Cumulative revenue by ticket type and class (Daily)", style={'textAlign': 'center', 'color': '#800080', 'font-family': 'Arial, sans-serif'}),
     html.H5("Choose parameter", style = {'color': '#800080', 'font-family': 'Arial, sans-serif'}),
     dcc.Dropdown(
         id='revenue-type',
@@ -367,13 +367,13 @@ first_page_layout = html.Div(
         html.Br(),
         dbc.Row(
             [
-                dbc.Col(html.Div(cytoscape_graph), width=5),
+                dbc.Col(html.Div(cytoscape_graph), width=6),
                 dbc.Col(
                     [
                         html.Div(revenue_variability),
                         html.Div(cumulative_revenue_daily)
                     ],
-                    width=7
+                    width=6
                 )
             ]
         ),
@@ -382,7 +382,7 @@ first_page_layout = html.Div(
             [
                 dbc.Col(
                     [
-                        html.H2("How to use this dashboard?", style={'textAlign': 'left', 'color': '#800080', 'font-family': 'Arial, sans-serif'}),
+                        html.H3("How to use this dashboard?", style={'textAlign': 'left', 'color': '#800080', 'font-family': 'Arial, sans-serif'}),
                         html.Br(),
                         dcc.Markdown(description, style=markdown_style),
                         dcc.Markdown(description2, style=markdown_style)
