@@ -1,5 +1,4 @@
 All elements in this dashboard are interactive. You can play with them by changing the values in the dropdown menu, zooming in and out, 
 dragging around and activating/deactivating particular traces (by clicking on them in the legend pane).
 The graph with the most popular routes additionally **displays the station's name when you hover over the particular node (city). Also, the route along with the number of tickets sold is displayed when you hover over the particular edge (route).
-The displayed information is there (just under the dropdown window) untill you hover over another station/route.** Since you can move and zoom the graph (and its elements) too, in order to get back to the original setting
-just change the scope of the graph in the dropdown menu and the graph will rescale back. **The default setting ensures the nodes (cities) correspond to actual geographical coordinates (WGS 84).**
+The displayed information is there (just under the dropdown window) untill you hover over another station/route.** The nodes (cities) correspond to actual geographical coordinates (WGS 84).

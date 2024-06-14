@@ -52,8 +52,8 @@ second_page_layout = html.Div(
                         ),
                         dbc.Row(
                             [
-                                dbc.Col(html.Div(dcc.Graph(figure=generate_pie_chart(all_delayed_departures_by_reason))), width=8),
-                                dbc.Col(html.Div(dcc.Graph(figure=generate_bar_chart(df))), width=3)
+                                dbc.Col(html.Div(dcc.Graph(figure=generate_pie_chart(all_delayed_departures_by_reason))), width=7),
+                                dbc.Col(html.Div(dcc.Graph(figure=generate_bar_chart(df))), width=4)
                             ]
                         ),
                         dbc.Row(

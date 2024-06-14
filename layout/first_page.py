@@ -269,7 +269,7 @@ def update_figure(selected_type):
 
     fig_cum.update_layout(
         title=None,
-        font={'family': 'Arial, sans-serif', 'size': 18},
+        font={'family': 'Arial, sans-serif', 'size': 14},
         plot_bgcolor='white',
         paper_bgcolor='white'
     )
@@ -306,13 +306,13 @@ first_page_layout = html.Div(
         html.Br(),
         dbc.Row(
             [
-                dbc.Col(html.Div(cytoscape_graph), width=6),
+                dbc.Col(html.Div(cytoscape_graph), width=5),
                 dbc.Col(
                     [
                         html.Div(revenue_variability),
                         html.Div(cumulative_revenue_daily)
                     ],
-                    width=6
+                    width=7
                 )
             ]
         ),
