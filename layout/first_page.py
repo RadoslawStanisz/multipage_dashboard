@@ -227,7 +227,7 @@ def update_graph(selected_interval):
         title=None,
         xaxis={'title': 'Date', 'gridcolor': 'lightgrey', 'gridwidth': 1, 'showline': False},
         yaxis={'title': 'Revenue', 'gridcolor': 'lightgrey', 'gridwidth': 1},
-        font={'family': 'Arial, sans-serif', 'size': 18},
+        font={'family': 'Arial, sans-serif', 'size': 14},
         plot_bgcolor='white',
         paper_bgcolor='white'
     )

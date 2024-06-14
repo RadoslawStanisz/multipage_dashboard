@@ -238,7 +238,7 @@ def gen_pie_charts(df, column):
     fig.update_traces(textfont_size=14)
     fig.update_layout(
         legend=dict(
-            font=dict(size=14)
+            font=dict(size=12)
         )
     )
 
