@@ -83,7 +83,7 @@ def create_kpi_section():
 
 
 cytoscape_graph = html.Div([
-    html.H2('Most popular routes', style={'textAlign': 'center', 'color': '#800080', 'font-family': 'Arial, sans-serif'}),
+    html.H3('Most popular routes', style={'textAlign': 'center', 'color': '#800080', 'font-family': 'Arial, sans-serif'}),
     html.H5('Choose the scope', style={'color': '#800080', 'font-family': 'Arial, sans-serif'}),
     dcc.Dropdown(
         id='route-selection',
@@ -287,7 +287,7 @@ first_page_layout = html.Div(
     [
         dbc.Row(
             [
-                dbc.Col(html.H1("UK National Rail Dashboard", style={'textAlign': 'center', 'color': '#800080', 'font-family': 'Arial, sans-serif', 'fontSize': '62px'}), width=12)
+                dbc.Col(html.H1("UK National Rail Dashboard", style={'textAlign': 'center', 'color': '#800080', 'font-family': 'Arial, sans-serif', 'fontSize': '52px'}), width=12)
             ]
         ),
         html.Br(),

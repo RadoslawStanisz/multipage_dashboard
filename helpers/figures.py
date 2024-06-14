@@ -76,20 +76,10 @@ def generate_cytoscape_graph(station_labels):
                 }
             }
         ],
-        userZoomingEnabled=True,  
-        userPanningEnabled=True 
+        userZoomingEnabled=False,
+        userPanningEnabled=False
     )
 
-
-
-
-def revenue_variability():
-    # Code to create revenue variability chart
-    pass
-
-def cumulative_revenue_daily():
-    # Code to create cumulative revenue daily chart
-    pass
 
 def create_rush_hours_histogram(df):
     
@@ -104,7 +94,7 @@ def create_rush_hours_histogram(df):
 
     fig_rush_hours.update_layout(
     bargap=0.2,  
-    font={'family': 'Arial, sans-serif', 'size': 18},
+    font={'family': 'Arial, sans-serif', 'size': 14},
     plot_bgcolor='white',  
     paper_bgcolor='white',
     legend=dict(
@@ -113,7 +103,7 @@ def create_rush_hours_histogram(df):
         y=1.02,
         x=0.36,
         title=None,
-        font=dict(size=16)
+        font=dict(size=14)
     ),
     xaxis=dict(
         tickmode='array',  
@@ -122,7 +112,7 @@ def create_rush_hours_histogram(df):
         range=[-1, 24],  
         )
     )
-    fig_rush_hours.update_traces(textfont_size=16)  
+    fig_rush_hours.update_traces(textfont_size=14)
     fig_rush_hours.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
     fig_rush_hours.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
 
@@ -141,14 +131,14 @@ def create_delays_histogram(df):
 
     fig_all_delayed_departures2.update_layout(
                 bargap=0.4,  
-                font={'family': 'Arial, sans-serif', 'size': 18},
+                font={'family': 'Arial, sans-serif', 'size': 14},
                 plot_bgcolor='white',  
                 paper_bgcolor='white',
                 yaxis_title='count',
-                legend=dict(font=dict(size=16))
+                legend=dict(font=dict(size=14))
                 )
         
-    fig_all_delayed_departures2.update_traces(textfont_size=16)  
+    fig_all_delayed_departures2.update_traces(textfont_size=14)
     fig_all_delayed_departures2.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
     fig_all_delayed_departures2.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
     
@@ -174,7 +164,7 @@ def generate_bar_chart(df):
                  color_discrete_sequence=['#800080', 'green'])
 
     fig.update_layout(
-        font={'family': 'Arial, sans-serif', 'size': 18},
+        font={'family': 'Arial, sans-serif', 'size': 14},
         plot_bgcolor='white',  
         paper_bgcolor='white',
         title=None,
@@ -198,7 +188,7 @@ def generate_pie_chart(df):
     fig.update_traces(
         textinfo='percent+label',
         textposition='outside',
-        textfont_size=16
+        textfont_size=14
     )
     
     fig.update_layout(
@@ -214,7 +204,7 @@ def create_scatter(df):
     fig.update_layout(
         plot_bgcolor='white', 
         paper_bgcolor='white',
-        font={'family': 'Arial, sans-serif', 'size': 18},
+        font={'family': 'Arial, sans-serif', 'size': 14},
         xaxis_title='Travel duration (minutes)',  
         yaxis_title='Delay (minutes)'     
     )
@@ -245,10 +235,10 @@ def gen_pie_charts(df, column):
         hole=0.4,
         color_discrete_sequence=['#AB63FA', 'blue', '#FFA15A', 'green', '#B6E880']
     )
-    fig.update_traces(textfont_size=16)
+    fig.update_traces(textfont_size=14)
     fig.update_layout(
         legend=dict(
-            font=dict(size=16)
+            font=dict(size=14)
         )
     )
 
@@ -265,7 +255,7 @@ def page_3_chart_7(df):
 
     days_between.update_layout(
         bargap=0.4,  
-        font={'family': 'Arial, sans-serif', 'size': 18},
+        font={'family': 'Arial, sans-serif', 'size': 14},
         plot_bgcolor='white',  
         paper_bgcolor='white',
         yaxis_title='Frequency',

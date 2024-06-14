@@ -35,19 +35,19 @@ second_page_layout = html.Div(
                             html.Br(),
                             html.H5(dcc.Markdown(introduction_2), style={'textAlign': 'justify', 'margin-right': '40px', 'color': '#800080', 'font-family': 'Arial, sans-serif', 'font-size': '20px'}),
                             html.Br(),
-                            html.H2("Peak travel times and journey status by hour of departure", style=style),
+                            html.H3("Peak travel times and journey status by hour of departure", style=style),
                             dcc.Graph(figure=create_rush_hours_histogram(rush_hours)),
                             html.Br(),
                             html.Br(),
-                            html.H2("Distribution of delays", style=style),
+                            html.H3("Distribution of delays", style=style),
                             dcc.Graph(figure=create_delays_histogram(all_delayed_departures2)),
                             html.Br(),
                             html.Br(),
                         ]),
                         dbc.Row(
                             [
-                                dbc.Col(html.H2("Departure delays by reason", style=style), width=7),
-                                dbc.Col(html.H2("Delays percentage by day type", style=style), width=4)
+                                dbc.Col(html.H3("Departure delays by reason", style=style), width=7),
+                                dbc.Col(html.H3("Delays percentage by day type", style=style), width=5)
                             ]
                         ),
                         dbc.Row(
@@ -59,7 +59,7 @@ second_page_layout = html.Div(
                         dbc.Row(
                             [
                                 dbc.Col(html.Div([
-                                    html.H2("Delays vs. Travel duration", style=style),
+                                    html.H3("Delays vs. Travel duration", style=style),
                                     dcc.Graph(figure=create_scatter(all_delayed_departures3))]))
                             ]
                         )

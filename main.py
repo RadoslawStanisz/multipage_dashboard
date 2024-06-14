@@ -13,9 +13,9 @@ app.layout = dbc.Container([
     dbc.Row(
         dbc.Col(
             dbc.ButtonGroup([
-                dbc.Button("Revenue", href='/', color='primary', className='me-2 btn-lg'),
-                dbc.Button("Delays", href='/delays_reporting', color='primary', className='me-2 btn-lg'),
-                dbc.Button("Customer behavior", href='/customers_reporting', color='primary btn-lg')
+                dbc.Button("Revenue", href='/', color='primary'),
+                dbc.Button("Delays", href='/delays_reporting', color='primary'),
+                dbc.Button("Customer behavior", href='/customers_reporting', color='primary')
             ]),
             width='auto',
             className='d-flex justify-content-center align-items-center'
