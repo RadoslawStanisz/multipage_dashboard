@@ -6,6 +6,7 @@ from layout.first_page import first_page_layout
 from layout.second_page import second_page_layout
 from layout.third_page import third_page_layout
 
+server = app.server
 app.layout = dbc.Container([
     dcc.Location(id='url', refresh=False),
 
