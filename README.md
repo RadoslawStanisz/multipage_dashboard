@@ -35,6 +35,6 @@ The dashboard helps users to answer following questions:
 
 ### Project output
 
-The dashboard is an interactive web app built in Dash and Plotly. It can be run locally or can be viewed [here](https://multipage-dashboard-2.onrender.com/). **Since the app was deployed for demonstration purposes within a free tier on Render, it may take up to 1 minute to load.**
+The dashboard is an interactive web app built in Dash and Plotly. It can be run locally or can be viewed [here](https://multipage-dashboard-2.onrender.com/). **Since the app was deployed for demonstration purposes within a free tier on Render, it may take up to 2-3 minutes to load.**
 
 
